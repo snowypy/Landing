@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vandal Landing Page
+
+This is the code for the landing page of Vandal. It is built using Next.js and Tailwind CSS.
 
 ## Getting Started
 
-First, run the development server:
+To get started, you need to have Node.js and npm installed on your machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Install Dependencies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository
+2. Navigate to the project directory
+3. Install the dependencies by running `npm install`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Run the Development Server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Start the development server by running `npm run dev`
+2. Open your browser and navigate to `http://localhost:3000`
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! I may consider adding more features or improving the existing ones. If you have any suggestions or ideas, please feel free to open an issue or submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## Deploy on Vercel
+## Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I would like to thank [Aiden](https://aiden.gg) for the inspiration. I also want to thank [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com) for their amazing frameworks.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+
+If you have any questions or need help, please feel free to reach out to me at [SnowyJS](https://snowyjs.lol).
