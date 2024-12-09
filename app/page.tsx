@@ -63,27 +63,42 @@ export default function LandingPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, type: 'spring', bounce: 0.5 }}
             >
-              {['Docs', 'BuiltByBit', 'Support'].map((item, index) => (
-                <motion.div
-                  key={item}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link 
-                    href={`#${item.toLowerCase()}`}
-                    className="px-8 py-2 bg-black/50 border border-pink-500 rounded-md hover:bg-pink-500/10 transition-colors duration-300"
+              {['Docs', 'BuiltByBit', 'Support'].map((item, index) => {
+                let href;
+                switch (item) {
+                  case 'Docs':
+                    href = '#yettomake';
+                    break;
+                  case 'BuiltByBit':
+                    href = 'https://builtbybit.com/members/snowyjs.471033/';
+                    break;
+                  case 'Support':
+                    href = 'https://discord.gg/vandaldev';
+                    break;
+                  default:
+                    href = '#';
+                }
+                return (
+                  <motion.div
+                    key={item}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    {item}
-                  </Link>
-                </motion.div>
-              ))}
+                    <Link 
+                      href={href}
+                      className="px-8 py-2 bg-black/50 border border-pink-500 rounded-md hover:bg-pink-500/10 transition-colors duration-300"
+                    >
+                      {item}
+                    </Link>
+                  </motion.div>
+                );
+              })}
             </motion.div>
             
             <motion.div 
               className="mt-16 flex flex-col items-center gap-2 text-sm opacity-75 hover:opacity-100 transition-opacity cursor-pointer"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
             >
               Explore More
               <ChevronDown className="animate-bounce" />

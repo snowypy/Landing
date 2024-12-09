@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Permanent_Marker } from 'next/font/google'
 import { Github, MessageSquare } from 'lucide-react'
+import { FaDiscord } from "react-icons/fa";
 import Link from 'next/link'
 import CTABanner from './cta-banner'
 
@@ -60,7 +61,7 @@ export default function Footer() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <MessageSquare className="w-6 h-6" />
+                  <FaDiscord className="w-6 h-6" />
                   <span className="sr-only">Discord</span>
                 </motion.a>
                 <motion.a 
@@ -73,7 +74,7 @@ export default function Footer() {
                   <span className="sr-only">GitHub</span>
                 </motion.a>
                 <motion.a 
-                  href="#patreon" 
+                  href="#yettomake" 
                   className="text-gray-400 hover:text-white transition-colors"
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
@@ -90,17 +91,17 @@ export default function Footer() {
               <h3 className="text-pink-500 font-bold mb-4">Links</h3>
               <ul className="space-y-2">
                 <motion.li whileHover={{ x: 5 }}>
-                  <Link href="#docs" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="#yettomake" className="text-gray-400 hover:text-white transition-colors">
                     Terms of Service
                   </Link>
                 </motion.li>
                 <motion.li whileHover={{ x: 5 }}>
-                  <Link href="#download" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="#yettomake" className="text-gray-400 hover:text-white transition-colors">
                     Privacy
                   </Link>
                 </motion.li>
                 <motion.li whileHover={{ x: 5 }}>
-                  <Link href="#pricing" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="#yettomake" className="text-gray-400 hover:text-white transition-colors">
                     Details
                   </Link>
                 </motion.li>
@@ -111,7 +112,7 @@ export default function Footer() {
               <h3 className="text-pink-500 font-bold mb-4">Support</h3>
               <ul className="space-y-2">
                 <motion.li whileHover={{ x: 5 }}>
-                  <Link href="#discord" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="https://discord.gg/vandaldev" className="text-gray-400 hover:text-white transition-colors">
                     Discord
                   </Link>
                 </motion.li>

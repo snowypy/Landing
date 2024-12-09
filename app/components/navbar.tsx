@@ -37,13 +37,16 @@ export default function Navbar() {
               VANDAL
             </Link>
             <div className="flex gap-6">
-              {['Products','Discord', 'Docs'].map((item) => (
+              {['Products', 'Discord', 'Docs'].map((item) => (
                 <motion.div
                   key={item}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href={`#${item.toLowerCase()}`} className="text-white/70 hover:text-white transition-colors">
+                  <Link 
+                    href={item === 'Discord' ? 'https://discord.gg/vandaldev' : '#yettomake'} 
+                    className="text-white/70 hover:text-white transition-colors"
+                  >
                     {item}
                   </Link>
                 </motion.div>
@@ -53,5 +56,5 @@ export default function Navbar() {
         </div>
       </div>
     </motion.nav>
-  )
+);
 }

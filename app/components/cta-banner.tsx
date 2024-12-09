@@ -9,13 +9,13 @@ export default function CTABanner() {
       </p>
       <div className="flex gap-4">
         <Link 
-          href="#download"
+          href="https://builtbybit.com/members/snowyjs.471033/"
           className="px-6 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 transition-colors"
         >
           BuiltByBit
         </Link>
         <Link 
-          href="#pricing"
+          href="#yettomake"
           className="px-6 py-2 border border-pink-500 text-white rounded hover:bg-pink-500/10 transition-colors"
         >
           View Pricing
